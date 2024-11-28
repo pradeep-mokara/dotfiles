@@ -1,0 +1,44 @@
+:q# Tab bar
+tab_bar_style fade
+tab_fade 1
+# active_tab_foreground   #3d59a1
+# active_tab_background   #16161e
+active_tab_font_style   bold
+# inactive_tab_foreground #787c99
+# inactive_tab_background #16161e
+inactive_tab_font_style bold
+# tab_bar_background #101014
+
+# Title bar
+# macos_titlebar_color #16161e
+
+# Storm
+# background #24283b
+# cursor_text_color #24283b
+# active_tab_background   #1f2335
+# inactive_tab_background #1f2335
+# macos_titlebar_color #1f2335
+
+font_family      CaskaydiaCove Nerd Font Mono Regular
+bold_font        CaskaydiaCove Nerd Font Mono Regular
+# font_family      Mononoki Nerd Font Regular
+# bold_font        Mononoki Nerd Font Bold
+# italic_font      BlexMono Nerd Font Mono Italic
+# bold_italic_font BlexMono Nerd Font Mono Bold Italic
+
+font_size 22.0
+disable_ligatures never
+shell_integration no-cursor
+window_padding_width 2
+hide_window_decorations titlebar-only
+background_opacity 1.0
+macos_option_as_alt yes
+cursor_trail 5
+map ctrl+f launch --type=overlay --stdin-source=@screen_scrollback /opt/homebrew/bin/fzf --no-sort --no-mouse --exact -i
+ 
+
+
+# BEGIN_KITTY_THEME
+# Catppuccin-Latte
+include current-theme.conf
+# END_KITTY_THEME
